@@ -1,0 +1,35 @@
+body{
+  
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.movieContent{
+    background: whitesmoke;
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+.each-movie{
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+.time{
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media screen and (min-width:992px) {
+    .movieContent{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+}
